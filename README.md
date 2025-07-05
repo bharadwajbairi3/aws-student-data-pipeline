@@ -2,7 +2,10 @@
 
 An end-to-end serverless data pipeline that collects, stores, transforms, and analyzes student academic data using AWS services like EC2, DynamoDB, Lambda, S3, Glue, and Athena.
 
----
+## 📌 Screenshot
+
+![Pipeline Diagram](diagram/project2.drawio.png)
+
 
 ## 🔧 Project Overview
 
@@ -15,7 +18,7 @@ This project demonstrates how to build a scalable real-time + batch data process
 - ⚙️ AWS Glue joins and transforms data
 - 📊 Data stored in S3 (Parquet) and queried via Athena
 
----
+
 
 ## 🔗 AWS Services Used
 
@@ -30,7 +33,7 @@ This project demonstrates how to build a scalable real-time + batch data process
 | **EventBridge**| Trigger SNS alerts on Glue job completion    |
 | **SNS**        | Email notification after ETL success/failure |
 
----
+
 
 ## 📌 Features
 
@@ -41,7 +44,7 @@ This project demonstrates how to build a scalable real-time + batch data process
 - Scalable and serverless architecture
 - Athena dashboard-ready
 
----
+
 
 ## 🧪 Sample Use Case
 
@@ -49,7 +52,7 @@ This project demonstrates how to build a scalable real-time + batch data process
 > The data is instantly written to DynamoDB and backed up to S3.  
 > Later, a Glue job processes all data and prepares a warehouse layer for querying with Athena or BI tools.
 
----
+
 
 ## 📈 Output
 
@@ -57,7 +60,7 @@ This project demonstrates how to build a scalable real-time + batch data process
 - **Warehouse:** `s3://bb-de-project-2/datawarehouse/` (Parquet files)
 - **Athena Table:** Points to warehouse folder with ready-to-query schema
 
----
+
 
 ## 🧰 Setup Instructions
 
@@ -86,7 +89,7 @@ This project demonstrates how to build a scalable real-time + batch data process
    - Use EventBridge → Glue Job Status  
    - Notify success/failure via email
 
----
+
 
 ## ✅ Tech Stack
 
@@ -96,7 +99,7 @@ This project demonstrates how to build a scalable real-time + batch data process
 - Gunicorn + Nginx
 - HTML, CSS (Bootstrap)
 
----
+
 
 ## 📬 Contact
 
@@ -104,17 +107,14 @@ This project demonstrates how to build a scalable real-time + batch data process
 **Email:** bharadwajbairi3@gmail.com  
 **LinkedIn:** [linkedin.com/in/bharadwajbairi](https://linkedin.com/in/bharadwajbairi)
 
----
+
 
 ## 🏁 Status
 
 ✅ Completed and deployed.  
 🎯 Future Enhancements: Quicksight dashboards, CI/CD for Lambda + Glue jobs.
 
----
 
-## 📌 Screenshot
 
-![Pipeline Diagram](diagram/project2.drawio.png)
 
 
